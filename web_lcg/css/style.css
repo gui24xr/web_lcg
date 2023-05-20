@@ -98,7 +98,7 @@
 .social_bar {
 
     position: fixed;
-    margin: 660px 0px 50px 540px;
+    margin: 340px 0px 0px 95%;
     display: flex;
     width: 180px;
     height: 0.01px;
@@ -114,8 +114,8 @@
    
 
     display: flex;
-    /*flex-direction: column;*/
-    padding: 20px 20px 20px 20px;
+    flex-direction: column;
+    padding: 10px 10px 0px 10px;
     background-color: rgba(120, 123, 250, 0.25);
     border-radius: 10%;
     
@@ -158,7 +158,7 @@ background-color: transparent;
 .portada_container {
 
     margin-top:40px; /* Esto se uso para compensar el NO ESPACIO de la barra de navegacion superior x culpa del position fixed */
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 
     display: grid;
     width: 100%;
@@ -166,16 +166,23 @@ background-color: transparent;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(12,1fr);
     overflow: hidden;
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
+/*-------------------------------------------------------------------------*/
+/* --------------------------*/
 .spoty_1{
 
     grid-column-start: 0;
     grid-column-end: 2;
     grid-row-start: 11;
+    grid-row-end: 12;
     
-  
     margin-left: 15px;
+    margin-top: 150px;
     margin-bottom: 15px;
     width: 230px;
     height: 80px;
@@ -190,7 +197,7 @@ background-color: transparent;
     grid-column-start: 0;
     grid-column-end: 2;
     grid-row-start: 12;
-   
+    grid-row-end: 12;
     margin-left: 15px;
     margin-bottom: 10px;
     width: 230px;
@@ -198,6 +205,127 @@ background-color: transparent;
     
   
 }
+
+
+.prox_shows_container{
+
+    
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 12;
+
+    width: 200px;
+    margin-top: 200px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+   
+
+    
+    padding: 10px 10px 10px 10px;
+    background-color: rgba(209, 0, 139, 0.45);
+    backdrop-filter: blur(20px);
+    opacity: 85%;
+    border-radius: 5%;
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+                inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+                inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+                0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+
+
+}
+
+.prox_shows_container h5{
+
+    font-family:familia_1;
+    letter-spacing: 0.09em;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color:#FFFFFF;
+
+    background-color: transparent;
+
+
+}
+
+.show_container{
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    padding: 2px 2px 2px 2px;
+
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+
+}
+
+
+
+
+.prox_shows_container p{
+
+    margin: 3px 3px 3px 3px;
+    
+
+    font-family:familia_1;
+    letter-spacing: 0.09em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color:#FFFFFF;
+
+    background-color: transparent;
+
+
+
+    
+}
+
+.mexico_flag2{
+
+    background-color: transparent;
+    width: 8%;
+    height: 40%;
+    margin-top: 6px;
+  
+}
+
+.fecha_container{
+
+    padding-left: 2px;
+    background-color: transparent;
+
+
+
+    
+}
+
+.fecha_container strong{
+
+    background-color: transparent;
+}
+
+.link_mas_shows{
+
+    font-family:familia_1;
+    letter-spacing: 0.09em;
+    font-style: normal;
+    
+    font-size: 12px;
+    color:#FFFFFF;
+
+    background-color: transparent;
+    text-decoration: none;
+    padding-left: 85%;
+    padding-top: 3%;
+}
+
+
+
+
 
 .foto_portada_container{
 
@@ -211,6 +339,10 @@ background-color: transparent;
     margin-left: 30px;
     overflow: hidden;
     
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
     
 
 }
@@ -222,61 +354,119 @@ background-color: transparent;
     margin-left: -40px;
     margin-top: -20px;
 
+   
+
 }
 
+.link_suscripcion{
+
+
+    grid-column-start: 12;
+    grid-column-end: 12;
+   
+    grid-row-start: 12;
+    grid-row-end: 13;
+    width: 190px;
+    height: 40px;
+   
+
+    padding: 15px 15px 15px 35px;
+    margin-left: 140px;
+    margin-top: 5px;
+    overflow: hidden;
+    font-family:familia_1;
+    letter-spacing: 0.15em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color:#FFFFFF;
+    backdrop-filter: blur(20px);
+    background-color: transparent;
+    text-decoration: none;
+
+}
+
+.link_contrataciones{
+
+
+    grid-column-start: 12;
+    /*grid-column-end:13;*/
+   
+    grid-row-start: 12;
+    /*grid-row-end: 11;*/
+    width: 190px;
+    height: 40px;
+    margin-top: 45px;
+    margin-left: 140px;
+    padding: 15px 15px 15px 15px;
+ 
+    overflow: hidden;
+    font-family:familia_1;
+    letter-spacing: 0.15em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color:#FFFFFF;
+    backdrop-filter: blur(20px);
+    background-color: transparent;
+    text-decoration: none;
+
+}
 
        
    
 
 
-/*
-.spoty_previews {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    width: 290px;
-    margin-left: 10px;
-  
-}
-
-
-
-.portada_foto{
-
-   margin-left: 20px;
-   overflow: hidden; 
-   top: -1400px;
-    left: -40px;
-
-}
-
-.portada_foto img{
-
-    
-    width: 1155px;
-    height: 755px;
-    
-}
-*/
 
 /* NOTICIAS -----------------------------------------------------------------------------------------------*/
 
 .seccion_noticias{
 
     display: flex;
- 
-    padding: 150px 0 0 0;
     flex-direction: column;
-    margin: 0px 0px 40px 0px;
-    background-color: transparent;
+    padding: 50px 0 30px 0;
+    margin: 0px 0px 20px 0px;
+
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+
+    
+        
 }
 
-.seccion_noticias h1{
 
-    display: flex;
+.titulo_seccion_noticias{
+
+    
     justify-content: center;
-    margin: 0px 200px 50px 200px;
+    margin: 0px 200px 50px 100px;
+    padding-left: 30px;
+    
+ 
+
+    font-family:familia_1;
+    letter-spacing: 0.25em;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    color:#FFFFFF;
+    backdrop-filter: blur(4px);
+    background-color: transparent;
+
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.mas_noticias{
+
+    
+    justify-content: center;
+    margin: 0px 200px 50px 100px;
+    padding-left: 30px;
     
  
 
@@ -288,40 +478,78 @@ background-color: transparent;
     color:#FFFFFF;
     backdrop-filter: blur(4px);
     background-color: transparent;
-}
 
-.linea_division{
-
-    border-top: 10px;
-    
-    border-style: double;
-    border-color: #FFFFFF;
-    width: 1000px;
-    margin-left: 1500px;
-
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 
 
-.noticia_cuadro {
+
+
+
+.noticia_container{
 
     display: flex;
+    flex-direction: column;
+    margin: 10px 150px 40px 150px;
    
-
-    justify-content: center;
-    background-color:rgb(48, 78, 70);
-    opacity: 70%;
-    margin: 20px 90px 10px 90px;
+    font-family: familia_1;
+    color: #FFFFFF;
+    background-color: rgba(5, 90, 55, 0.75);
+    backdrop-filter: blur(20px);
+    opacity: 85%;
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+                inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+                inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+                0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
 
 }
 
-.noticia_cuadro p{
+.noticia_container h3{
 
-    
-    padding: 20px 20px 20px 30px;
     background-color: transparent;
-    font-family: familia_1;
-    color: #FFFFFF;
+    padding: 15px 40px 10px 40px;
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    
+
+}
+.noticia_container p{
+
+    background-color: transparent;
+    padding: 30px 40px 80px 40px;
+   
+}
+
+
+.noticia_container a{
+
+
+    padding: 10px 20px 10px 30px;
+    margin-left: 82%;
+    
+    overflow: hidden;
+    font-family:familia_1;
+    letter-spacing: 0.15em;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color:#FFFFFF;
+    
+    background-color: transparent;
+    text-decoration: none;
+
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    
+
 
 }
 
@@ -334,6 +562,7 @@ background-color: transparent;
     font-size: 18px;
     color:#FFFFFF;
     text-decoration: none;
+
     
 
 
@@ -359,7 +588,11 @@ background-color: transparent;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(12,1fr);
     overflow: hidden;
+
 }
+    
+    
+
 
 
 
@@ -372,6 +605,14 @@ background-color: transparent;
     grid-column-end: 13;
     grid-row-start: 1;
     grid-row-end: 13;
+
+    
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+
+
 
 
 }
@@ -389,6 +630,12 @@ background-color: transparent;
     background-color: rgba(5, 90, 55, 0.95);
     /*filter: blur(100px); Aca no es necesario.*/ 
     padding: 30px;
+
+    
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
 
     
    
@@ -416,10 +663,53 @@ overflow-y: scroll;
 
 
 
+.suscripcion_container {
+
+    margin-top:40px; /* Esto se uso para compensar el NO ESPACIO de la barra de navegacion superior x culpa del position fixed */
+    margin-bottom: 40px;
+
+    display: grid;
+    width: 100%;
+    height: 700px;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    overflow: hidden;
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.suscripcion_container img{
+
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end:12;
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.formulario_suscripcion{
+
+    width: 100%;
+    height: 90%;
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 1;
+    grid-row-end:12;
+    margin-top: 15%;
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
 
 
 
-
+}
 
 
     

@@ -1,86 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <LINK REL=StyleSheet HREF="../css/style.css" TYPE="text/css" MEDIA=screen>
-    <title>Luis Carlos Gago</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <LINK REL=StyleSheet HREF="../css/style.css" TYPE="text/css" MEDIA=screen>
+        <LINK REL=StyleSheet HREF="css/fontello/ccs/fontello.css"  >
+        <title>Luis Carlos Gago</title>
+    </head>
 
-    <!-- SECCION SUPERIOR BARRA SUPERIOR DE NAVEGACION SE ENCUENTRA EN TODAS LAS PAGINAS  -->
+
+    <body>
+        
+        <div class="flex_container">
+        
+            <header>
+
+                <div class="header_bar">
+                    <nav >
+                        <ul class = "uno">
+                            <li><a href="#">INICIO</a></li>
+                            <li><a href="#seccion_noticias">NOTICIAS</a></li>
+                            <li><a href="pages/tour.html">TOUR</a></li>
+                            <li><a href="pages/musica.html">MUSICA</a></li>
+                            <li><a href="#">VIDEOS</a></li>
+                            <li><a href="pages/suscripcion.html">FOTOS</a></li>
+                            <li><a href="pages/biografia.html">BIOGRAFIA</a></li>
+                            <li><a href="#">DISCOGRAFIA</a></li>
+                        </ul>
+                    </nav>
+
+                    <img id="img_mexico_flag" src="../imagenes/mexico_flag.png" >
+                </div>
+
+                <div class="social_bar">
+
+                    <nav>
+                        <ul>
+                            <li><a href="https://www.instagram.com/" target="_blank"><img src="../imagenes/icons/ico_insta2.png" width="45" height="45"></a></li>
+                            <li><a href="https://twitter.com/twitterlatam?lang=es" target="_blank"><img src="../imagenes/icons/ico_twitter.png" width="45" height="45"></a></li>
+                            <li><a href="https://www.facebook.com/" target="_blank"><img src="../imagenes/icons/ico_fb.png" width="45" height="45"></a></li>
+                          
+                            <li><a href="https://music.youtube.com/" target="_blank"><img src="../imagenes/icons/ico_ytm.png" width="45" height="45"></a></li>
+                            <li><a href="https://www.youtube.com/" target="_blank"><img src="../imagenes/icons/ico_yt.png" width="45" height="45"></a></li>
+                            <li><a href="https://open.spotify.com/search/luis%20carlos%20gago" target="_blank"><img src="../imagenes/icons/ico_spo.png" width="45" height="45"></a></li>
+              
+                            
+                        </ul>
+                    </nav>
+                </div>
+
+             
+
+
+        </header>
+
+
+        <main>
+            
+            <!-- SECCION PORTADA PRINCIPAL IMAGEN Y PREVIWS SPOTIFY ---------------------------------->
+            
+                
+            
+                <div class="suscripcion_container">
+
+                   
+
+                 <img src="../imagenes/img_portada_suscripcion.jpg" >
+                 
+                 
+                 <div class="formulario_suscripcion">
+
+                    <form action="#" method="post">
+                        <ul>
+                        <li>
+                           <label for="name">NOMBRE</label>
+                           <input type="text" id="nombre" name="user_name">
+                        </li>
+                        <li>
+                            <label for="name">APELLIDO</label>
+                            <input type="text" id="apellido" name="user_name">
+                        </li>
+                        <li>
+                           <label for="mail">CORREO ELECTRONICO</label>
+                           <input type="email" id="mail" name="user_mail">
+                        </li>
+                        <li>
+                           <label for="pais">PAIS</label>
+                           <select name="paises" id="pais">
+                              <option value="arg">Argentina</option>
+                              <option value="mex">Mexico</option>
+                              <option value="col">Colombia</option>
+                              <option value="usa">USA</option>
+                            </select>
+                        </li>
+                        </ul>
+                    </form>
+        
+                </div>
+
+              
+
+                
+            
+              
+            </div>
+
     
-    <section id = "barra_nav_sup" >
+                
+</main>
 
-        <div id = barra_navegacion_superior >
+        <footer class="pie">
 
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="#">NOTICIAS</a></li>
-                <li><a href="../pages/tour.html">TOUR</a></li>
-                <li><a href="../pages/musica.html">MUSICA</a></li>
-                <li><a href="#">VIDEOS</a></li>
-                <li><a href="#">FOTOS</a></li>
-                <li><a href="../pages/biografia.html">BIOGRAFIA</a></li>
-                <li><a href="#">DISCOGRAFIA</a></li>
-            </ul>
 
-            <img id="img_mexico_flag" src="../imagenes/mexico_flag.png" >
-
-        </div>
-
-    </section>
-
-    <!-- TITULO SECCION DE PAGINA ------------------------------------------------------------->
-
-    <div class="titulo_seccion_suscripcion">
-
-        <h1>SUSCRIPCION</h1>
+        </footer>
     </div>
 
-    <!-- SECCION PORTADA SUSCRIPCION y FORMULARIO-------------------------------------------->
+    </body>
 
-    <section id = "imagen_portada_suscripcion" >
+</html>
 
-        <div class="img_principal_suscripcion">
 
-            <img id="img_mexico_flag" src= "../imagenes/img_portada_suscripcion.jpg" width="400" height="400" >
 
-        </div>
-
-        <div class="formulario_suscripcion">
-
-            <form action="#" method="post">
-                <ul>
-                <li>
-                   <label for="name">NOMBRE</label>
-                   <input type="text" id="nombre" name="user_name">
-                </li>
-                <li>
-                    <label for="name">APELLIDO</label>
-                    <input type="text" id="apellido" name="user_name">
-                </li>
-                <li>
-                   <label for="mail">CORREO ELECTRONICO</label>
-                   <input type="email" id="mail" name="user_mail">
-                </li>
-                <li>
-                   <label for="pais">PAIS</label>
-                   <select name="paises" id="pais">
-                      <option value="arg">Argentina</option>
-                      <option value="mex">Mexico</option>
-                      <option value="col">Colombia</option>
-                      <option value="usa">USA</option>
-                    </select>
-                </li>
-                </ul>
-            </form>
-
-        </div>
-
-    </section>
-
+  
     
 
    
