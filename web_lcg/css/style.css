@@ -11,16 +11,21 @@
 
 @font-face {
     font-family: familia_1;
-    src: url('..assets/fonts/Staatliches-Regular.ttf');
+    src: url('../fonts/Staatliches-Regular.ttf');
 
 }
 
 @font-face {
     font-family: familia_2;
-    src: url('..assets/fonts/Staatliches-Regular.ttf');
+    src: url('../fonts/Staatliches-Regular.ttf');
 
 }
 
+@font-face{
+
+    font-family: familia_roboto;
+    src: url('../fonts/Roboto-Bold.ttf');
+}
 
 
 /* DOSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
@@ -912,3 +917,191 @@ overflow-y: scroll;
 
 
     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.seccion_tour_container {
+
+   
+
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(12,1fr);
+    overflow: hidden;
+    
+    
+    
+    margin-top:40px; /* Esto se uso para compensar el NO ESPACIO de la barra de navegacion superior x culpa del position fixed */
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+  
+    width: 90%;
+    height: 690px;
+
+    background-image: url("../imagenes/img_portada_tour.jpg");
+    background-size:contain;
+    background-position:right;
+    background-repeat: no-repeat;
+    background-position-x: 250px;
+    
+   
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+
+.box_fechas{
+
+    grid-column-start: 1;
+    grid-row-start: 9;
+    
+    width: 530px;
+    height: 500px;
+
+    margin: 30px 30px 30px 30px;
+    padding-left: 20px;
+    padding-bottom: 150px;
+    padding-top: 40px;
+
+    /*background-color:transparent;
+    background: rgba(204, 41, 41, 0.9);
+     backdrop-filter:  blur(30px);*/
+
+     
+    /* Color de fondo + transparencia de la division con rgba */
+    background-color: rgba(255, 231, 18, 0.45);
+    /*filter: blur(100px); Aca no es necesario.*/
+   
+    
+    overflow-y: scroll;
+
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+   
+
+}
+
+.box_fechas ul{
+
+    background-color: transparent;
+}
+
+.box_fechas ul li{
+
+    background-color: transparent;
+
+}
+
+.box_fechas ul h2{
+
+    background-color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    color: #FFFFFF;
+
+    margin: 30px 0px 30px 30px;
+
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+   
+    
+}
+
+.fecha_container_tour{
+
+    display: flex;
+    align-items: center;
+    justify-content:stretch;
+    background-color: transparent;
+   
+
+     
+}
+.fecha_container_tour div{
+
+
+    background-color: transparent;
+    margin: 10px 10px 10px 10px;
+
+     
+}
+
+.flag_datos_concierto{
+
+
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    row-gap: 50px;
+}
+
+
+
+.datos_conciertos{
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 40px;
+    
+
+    
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+
+  
+   
+}
+
+.datos_conciertos p{
+
+    background-color: transparent;
+    font-family: familia_roboto;
+    color: #f8f7f7;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+
+.datos_conciertos a{
+
+    background-color:red;
+    font-family: familia_1;
+    color: #f8f7f7;
+    font-size: 14px;
+    text-decoration:none;
+    border-radius: 25px;
+    
+    margin-left: 140px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
