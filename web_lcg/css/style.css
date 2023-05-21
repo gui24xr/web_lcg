@@ -663,52 +663,251 @@ overflow-y: scroll;
 
 
 
-.suscripcion_container {
+/* SUSCRIPCION -----------------------------------------------------------------------------------------------*/
+/* SUSCRIPCION -----------------------------------------------------------------------------------------------*/
 
-    margin-top:40px; /* Esto se uso para compensar el NO ESPACIO de la barra de navegacion superior x culpa del position fixed */
-    margin-bottom: 40px;
 
-    display: grid;
-    width: 100%;
-    height: 700px;
+.seccion_suscripcion_container {
+
+   
+
+    /*display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(12,1fr);
-    overflow: hidden;
+    overflow: hidden;*/
+    
+    display: flex;
+    justify-content:flex-end;
+    
+    margin-top:40px; /* Esto se uso para compensar el NO ESPACIO de la barra de navegacion superior x culpa del position fixed */
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    border-left: 60px black;
+    border-style:solid;
+    width: 90%;
+    height: 690px;
+
+    background-image: url("../imagenes/img_form_sucr.jpg");
+    background-size:contain;
+    background-position:left;
+    background-repeat: no-repeat;
+    background-position-x: -100px;
+    
+   
     box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
     inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
     inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
     0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
-.suscripcion_container img{
+/*
+.portada_suscripcion_container {
 
-    width: 100%;
+    
     grid-column-start: 1;
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end:12;
+
+
+
+
+    width: 40%;
+    height: 98%;
+    overflow: hidden;
+    margin: 0px 50px 30px 0px;
     box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
     inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
     inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
     0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
-.formulario_suscripcion{
 
-    width: 100%;
-    height: 90%;
-    grid-column-start: 7;
+.portada_suscripcion_container img{
+
+    width: 675px;
+    height: 1197px;
+    margin-left: -160px;
+    margin-top: -70px;
+
+
+
+}
+
+
+
+
+.form_container{
+
+    width: 60%;
+    height: 93%;
+    /*grid-column-start: 7;
     grid-column-end: 12;
     grid-row-start: 1;
-    grid-row-end:12;
-    margin-top: 15%;
+    grid-row-end:12;*/ /*
+    margin: 30px 30px 30px 70px;
     box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
     inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
     inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
     0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
 
 
 
+.form_container  {
+
+    /*background-color: blue; /*Esto para distinguir las cajas y luego lo quito 
+    background-image: url("../imagenes/img_form_sucr.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 67%;
+    
+}*/
+
+.formulario_suscripcion{
+
+    
+    margin-top:  50px;
+    
+    margin-right: 70px;
+    /*background-color:transparent;
+    background: rgba(204, 41, 41, 0.9);
+     backdrop-filter:  blur(30px);*/
+
+     
+    /* Color de fondo + transparencia de la division con rgba */
+    background-color: rgba(5, 90, 55, 0.45);
+    /*filter: blur(100px); Aca no es necesario.*/ 
+
+}
+
+.formulario_suscripcion ul{
+
+   padding-top: 50px;
+   background-color:transparent;
+}
+
+
+.formulario_suscripcion ul li{
+
+    text-decoration: none;
+    font-family: familia_1;
+    color: #FFFFFF;
+    background-color:transparent;
+    
+    display: flex;
+    flex-direction: column;
+    
+
+    
+    padding-left: 50px;
+    padding-right: 50px;
+    
+
+
+}
+
+.formulario_suscripcion ul li h2{
+
+    text-decoration: none;
+    font-family: familia_1;
+    color: #FFFFFF;
+    letter-spacing: 5px;
+    background-color:transparent;
+    padding-bottom: 30px;
+    
+    
+    
+
+
+}
+
+.formulario_suscripcion ul li label{ 
+    text-decoration: none;
+    font-family: familia_1;
+    color: #FFFFFF;
+
+    margin: 20px 20px 10px 0px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.formulario_suscripcion ul li input{ 
+    text-decoration: none;
+    font-family: familia_1;
+    color: #000000;
+
+
+    padding-left: 100px;
+    margin-bottom: 10px;
+    
+    background-color: #FFFFFF;
+    height: 25px;
+   
+    border-radius: 25px;
+    border-style: none;
+    background: #ffffff;
+
+    box-shadow: -7px 26px 47px 7px rgba(0,0,0,0.6),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+
+.formulario_suscripcion ul li select{ 
+    text-decoration: none;
+    font-family: familia_1;
+    color: #000000;
+
+
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #FFFFFF;
+    height: 30px;
+   
+    border-radius: 25px;
+    border-style: none;
+    background: #ffffff;
+
+    box-shadow: -7px 26px 47px 7px rgba(0,0,0,0.6),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.formulario_suscripcion ul li select option{ 
+    text-decoration: none;
+    font-family: familia_1;
+    color: #000000;
+
+
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #FFFFFF;
+    height: 25px;
+   
+    border-radius: 25px;
+    border-style: none;
+    background: #ffffff;
+
+    box-shadow: -7px 26px 47px 7px rgba(0,0,0,0.6),0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.formulario_suscripcion ul li .boton_aceptar{
+
+
+    font-family: familia_1;
+    color: #f8f7f7;
+    font-weight: bold;
+
+    border-radius: 25px;
+    margin-left: 70px;
+    margin-top: 70px;
+    margin-bottom: 90px;
+    width: 130px;
+    height: 30px;
+    background-color: rgb(37, 82, 230,0.55);
+    padding-left: 0px;
+
+ 
 }
 
 
