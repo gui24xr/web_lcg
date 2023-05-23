@@ -1242,10 +1242,11 @@ overflow-y: scroll;
 
 
 
-/*---------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------
+*-------------- SITIO RESPONSIVE PRIMER QUIEBRE ----------------------------------------------------------------------------------------
+*-------------------------------------------------------------------------------------------------------------------------------------*/
 
 @media (max-width: 768px){
-
 
 
 
@@ -1265,7 +1266,8 @@ overflow-y: scroll;
 
 
     display: block;
-    margin-left: 630px;
+   /* margin-left: 630px;*/
+    margin-left: calc(100% - 138px);
     scale: 150%;
     padding-top: 15px;
 
@@ -1344,5 +1346,120 @@ overflow-y: scroll;
 }
 
 
+/* BIOGRAFIA RESPONSIVE -----------------------------------------*/
+
+.biografia_container{
+
+    width: 100%;
+  
+    overflow-x: hidden;
+    height: calc(100% - 70px - 210px); /* largo de pantalla - header - píe */
+    overflow-y: auto;
+    height: 744px;
+}
+
+.biografia_container img{
+
+   
+ 
+    grid-column-start: 1;
+    grid-column-end: 11;
+ 
+
+}
+
+
+.contenedor_txt{
+    
+grid-column-start: 1;
+grid-column-end: 7;
+grid-row-start: 3;
+grid-row-end: 12;
+
+/* Color de fondo + transparencia de la division con rgba */
+background-color: rgba(5, 90, 55, 0.95);
+/*filter: blur(100px); Aca no es necesario.*/ 
+padding: 40px;
+margin-left: 50px;
+margin-right: 50px;
+
+} 
+
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------
+*-------------- SITIO RESPONSIVE SEGUNDO  QUIEBRE ----------------------------------------------------------------------------------------
+*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 375px){
+
+
+    .header_nav_menu_item,li{
+
+        font-size: 16px;
+        padding: 20px 0 0 0;
+        margin-left: -5px;
+    
+        
+        
+    }
+
+
+    /* biografia 320 */
+
+    .biografia_container{
+
+        overflow-x: hidden;
+        height: calc(100% - 70px - 134px); /* largo de pantalla - header - píe */
+        overflow-y: auto;
+        height: 463px;
+    }
+    
+    .biografia_container img{
+    
+       
+     
+        grid-column-start: 1;
+      
+     
+    
+    }
+    
+    
+    .contenedor_txt{
+        
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 12;
+    
+    /* Color de fondo + transparencia de la division con rgba */
+    background-color: rgba(5, 90, 55, 0.95);
+    /*filter: blur(100px); Aca no es necesario.*/ 
+
+    margin-left: 0px;
+   
+    
+    } 
+    
+    .contenedor_txt h1{
+        
+        font-size: 16px;}
+
+
+        .contenedor_txt p{
+
+            height: 260px;
+            padding: 10px 5x 10px 5px;
+  
+           
+            
+            
+            }
 
 }
