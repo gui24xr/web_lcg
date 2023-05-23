@@ -36,6 +36,7 @@
 
     display: flex;
     flex-direction: column;
+    margin-top: 70px;
 }
 
 /* HEADER -----------------------------------------------------------------------------------------------*/
@@ -120,7 +121,7 @@
 
     display: flex;
     flex-direction: column;
-    padding: 10px 10px 0px 10px;
+    padding: 10px 10px 10px 10px;
     background-color: rgba(120, 123, 250, 0.25);
     border-radius: 10%;
     
@@ -157,17 +158,145 @@ background-color: transparent;
 }
 
 
+/***barra navegacion responsive****************************************************/
+
+
+.header_prueba{
+
+    position: fixed;
+    top: 0;
+    left:0;
+    background-color: rgb(49, 44, 44);
+    overflow: hidden;
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+
+}
+
+
+.header_nav_bar{
+
+   
+    display: flex;
+   
+   
+    max-width: 992px;
+    background-color: rgb(49, 44, 44);
+    
+
+}
+
+.menu_header_nav_var{
+
+    display: flex;
+    justify-content:center;
+    padding-left: 50px;
+    margin-top: 10px;
+
+    list-style-type: none;
+    background-color:transparent;
+ 
+
+}
+
+
+
+.header_nav_toggle{
+
+    display: none;
+    color:white;
+    font-size: 30px;
+    border: none;
+    padding: 0px 10px 0px 10px;
+    background: none;
+    margin-top: -25px;
+}
+
+
+
+
+.header_nav_toggle:hover{
+
+    
+    background-color: rgba(5, 90, 55, 0.95);
+    /*filter: blur(100px); Aca no es necesario.*/ 
+
+
+}
+
+
+.header_nav_logo1{
+
+    width: 96px;
+    height: 72px;
+    background-color:transparent;
+    margin:0px 0px 0px 30px;
+    padding-top: 0;
+}
+
+.header_nav_menu_item,li{
+
+    width: max-content;
+ font: familia_1;
+ color: #f8f7f7;
+ text-decoration: none;
+
+ padding: 18px 7px 40px 7px;
+ background-color:transparent;
+
+
+ letter-spacing: 0.15em;
+ font-style:normal;
+ font-weight:400px;
+ font-size: 16px;
+
+
+}
+
+.header_nav_menu_item:hover{
+
+
+
+background-color: rgba(5, 90, 55, 0.95);
+
+/*filter: blur(100px); Aca no es necesario.
+padding: 18px 20px 40px 20px;*/ 
+
+
+
+
+
+}
+
+
+
+
+
+.header_nav_mxflag{
+
+    width: 54px;
+    height: 45px;
+    background-color:transparent;
+    margin-top: -15px;
+    margin-left: 320px;
+}
+
+
+
+
 
 /*******************************************************************/
 
 .portada_container {
 
     margin-top:40px; /* Esto se uso para compensar el NO ESPACIO de la barra de navegacion superior x culpa del position fixed */
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
     display: grid;
     width: 100%;
-    height: 700px;
+    height: 600px;
+
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(12,1fr);
     overflow: hidden;
@@ -578,7 +707,7 @@ background-color: transparent;
     display: flex;
     background-color: black;
     width: 100%;
-    height: 160px;
+    height: 260px;
 }
 
 
@@ -589,7 +718,7 @@ background-color: transparent;
 
     display: grid;
     width: 100%;
-    height: 680px;
+    height: 640px;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(12,1fr);
     overflow: hidden;
@@ -611,6 +740,9 @@ background-color: transparent;
     grid-row-start: 1;
     grid-row-end: 13;
 
+    margin-top: 0px;
+    margin-left: 160px;
+
     
     box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
     inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
@@ -628,13 +760,15 @@ background-color: transparent;
     
     grid-column-start: 2;
     grid-column-end: 6;
-    grid-row-start: 4;
+    grid-row-start: 3;
     grid-row-end: 13;
    
     /* Color de fondo + transparencia de la division con rgba */
     background-color: rgba(5, 90, 55, 0.95);
     /*filter: blur(100px); Aca no es necesario.*/ 
-    padding: 30px;
+    padding: 40px;
+    margin-left: -50px;
+    margin-right: 50px;
 
     
     box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
@@ -1104,4 +1238,111 @@ overflow-y: scroll;
     margin-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+
+
+/*---------------------------------------------------------*/
+
+@media (max-width: 768px){
+
+
+
+
+.header_nav_logo1{
+
+    height: 78px;
+    width: 50px;
+   
+    margin:0px 0px 0px 30px;
+    padding-top: 0;
+
+    
+}
+
+
+.header_nav_toggle{
+
+
+    display: block;
+    margin-left: 630px;
+    scale: 150%;
+    padding-top: 15px;
+
+}
+
+
+.menu_header_nav_var{
+
+    flex-direction: column;
+    justify-content:center;
+
+    position: fixed;
+    background-color: rgba(19, 8, 114, 0.85);
+    margin-top: 70px;
+    padding-top:20px;
+
+    width: 320px;
+        
+    height: calc(100% - 70px);
+    overflow-y: auto;
+
+    left: -100%;
+    transition: left;
+
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+
+
+}
+
+.header_nav_menu_item,li{
+
+    font-size: 20px;
+    padding: 30px 0 0 0;
+    margin-left: -5px;
+
+    
+    
+}
+
+.header_nav_mxflag{
+
+    width: 54px;
+    height: 45px;
+    background-color:transparent;
+    margin-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+    
+.header_nav_menu_item:hover{
+
+
+
+    background-color:transparent;
+   color: darkgreen;
+    
+    /*filter: blur(100px); Aca no es necesario.
+    padding: 18px 20px 40px 20px;*/ 
+    
+
+}
+
+
+.menu_header_nav_var_visible{
+
+    left : 0;
+}
+
+
+
 }
