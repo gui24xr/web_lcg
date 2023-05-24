@@ -39,6 +39,7 @@
     margin-top: 70px;
 }
 
+
 /* HEADER ANTIGUO BORRAR-----------------------------------------------------------------------------------------------
 
 .header_bar {
@@ -300,12 +301,12 @@ padding: 18px 20px 40px 20px;*/
 
 .portada_container {
 
-    margin-top:40px; /* Esto se uso para compensar el NO ESPACIO de la barra de navegacion superior x culpa del position fixed */
-    margin-bottom: 20px;
-
-    display: grid;
+    margin-top:70px; /* Esto se uso para compensar el NO ESPACIO de la barra de navegacion superior x culpa del position fixed */
+    padding-top: 00px;
     width: 100%;
     height: 600px;
+    display: grid;
+    
 
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(12,1fr);
@@ -498,6 +499,11 @@ padding: 18px 20px 40px 20px;*/
     margin-left: -40px;
     margin-top: -20px;
 
+    box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
+    inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
+    inset 0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1),
+    0px 10px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+
    
 
 }
@@ -580,12 +586,18 @@ padding: 18px 20px 40px 20px;*/
         
 }
 
+.container-fluid-1{    /*CLASE BOOTSTRAP QUE MODIFIQUE */
+
+    margin-top: 70px;
+    padding-top: 30px;
+    margin-right: 70px;
+}
 
 .titulo_seccion_noticias{
 
     
     justify-content: center;
-    margin: 0px 200px 50px 100px;
+    margin: 0px 200px 30px 100px;
     padding-left: 30px;
     
  
@@ -638,7 +650,10 @@ padding: 18px 20px 40px 20px;*/
 
     display: flex;
     flex-direction: column;
+    height: 400px;
     margin: 10px 150px 40px 150px;
+ 
+    overflow-y: scroll;
    
     font-family: familia_1;
     color: #FFFFFF;
@@ -665,8 +680,11 @@ padding: 18px 20px 40px 20px;*/
 }
 .noticia_container p{
 
+    height: 40%;
     background-color: transparent;
     padding: 30px 40px 80px 40px;
+    
+    
    
 }
 
@@ -1030,7 +1048,7 @@ overflow-y: scroll;
     
     width: 92%;
     height: 590px;
-    margin-top:10px; /* Esto se uso para compensar el NO ESPACIO de la barra de navegacion superior x culpa del position fixed */
+    margin-top:0px; /* Esto se uso para compensar el NO ESPACIO de la barra de navegacion superior x culpa del position fixed */
     margin-bottom: 30px;
     margin-left: 50px;
     margin-right: 50px;
@@ -1058,13 +1076,13 @@ overflow-y: scroll;
     grid-column-start: 2;
     grid-row-start: 3;
     
-    width: 530px;
-    height: 440px;
+    width: 370px;
+    height: 540px;
 
-    margin: 30px 30px 30px 30px;
-    padding-left: 20px;
+    margin: 10px 0px 10px 0px;
+    padding-left: 0px;
     padding-bottom: 150px;
-    padding-top: 40px;
+    padding-top: 0px;
 
     /*background-color:transparent;
     background: rgba(204, 41, 41, 0.9);
@@ -1076,7 +1094,7 @@ overflow-y: scroll;
     /*filter: blur(100px); Aca no es necesario.*/
    
     
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
 
     box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
     inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
@@ -1089,11 +1107,15 @@ overflow-y: scroll;
 .box_fechas ul{
 
     background-color: transparent;
+
 }
 
 .box_fechas ul li{
 
     background-color: transparent;
+    list-style-type: none;
+    padding-bottom: 0;
+    padding-top: 0;
 
 }
 
@@ -1101,9 +1123,10 @@ overflow-y: scroll;
 
     background-color: transparent;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: 16px;
     color: #FFFFFF;
 
-    margin: 30px 0px 30px 30px;
+    margin: 0px 0px 30px 0px;
 
     box-shadow: -32px 22px 15px 0px rgba(0,0,0,0.1),
     inset 0px 21px 45px 22px rgba(0,0,0,0.1),0px 10px 41px -3px rgba(0,0,0,0.1),
@@ -1119,6 +1142,7 @@ overflow-y: scroll;
     align-items: center;
     justify-content:stretch;
     background-color: transparent;
+    padding-left: 0;
    
 
      
@@ -1138,9 +1162,9 @@ overflow-y: scroll;
     background-color: transparent;
     width: 40px;
     height: 40px;
-    margin-left: 30px;
-    margin-right: 30px;
-    row-gap: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
 }
 
 
@@ -1301,7 +1325,7 @@ overflow-y: scroll;
 .social_bar {
 
     
-    margin: 0px 0px 0px 0PX;
+    margin: 0px 0px 0px 0px;
      
     
    
@@ -1386,11 +1410,38 @@ margin-right: 50px;
    
 
 
+/* noticias primer quiebre --------------------------*/
+
+.container-fluid-1{
+
+    margin-top: 110px;
+    padding-top: 30px;
+    margin-right: 70px;
+    height: 744px;
+   
+}
+
+.titulo_seccion_noticias{
+
+    
+    margin: 50px 200px 30px 100px;
+
+  
+    }
 
 
+    .noticia_container{
+
+        width: 450px;
+        height: 500px;
+        margin: 0x 30px 0px 0px;
+        
+      
+    
+    }
 
 
-
+        
 
 /*--------------------------------------------------------------------------------------------------------------------------------------
 *-------------- SITIO RESPONSIVE SEGUNDO  QUIEBRE ----------------------------------------------------------------------------------------
@@ -1495,6 +1546,40 @@ margin-right: 50px;
             
             
     }
+
+
+
+    /* noticias 2do quiebre quiebre --------------------------*/
+
+.container-fluid-1{
+
+    margin-top: 110px;
+    padding-top: 30px;
+    margin-right: 0px;
+    height: 463px;
+   
+}
+
+.titulo_seccion_noticias{
+
+    font-size:18px;
+    margin: 0px 10px 30px 0px;
+
+  
+    }
+
+
+    .noticia_container{
+
+        width: 150px;
+        height: 300px;
+        margin: 0x 0px 0px 0px;
+        
+      
+    
+    }
+
+
 
 
     /* 2DO QUIEBRE SUSCRIPCION ----------------*/
